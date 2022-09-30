@@ -57,8 +57,7 @@ You receive mark for submitting your lab correctly, please follow these instruct
 - Include a clickable link to your GitHub repo for the lab just below this cell (it should look something like this https://github.ubc.ca/MDS-2022-23/DSCI_521_labX_yourcwl.
 ```
 
-YOUR LAB GITHUB REPO LINK GOES HERE
-
+https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_dnishar
 
 ## Editing R Markdown documents
 
@@ -86,10 +85,9 @@ rubric={correctness:1}
 
 To render the HTML files we are going to create, the first step is to activate GitHub pages.
 
-
 ```
 
-YOUR ANSWER GOES HERE
+Link to GitHub pages: https://dhruvinishar.github.io/523-lab4-dnishar/ 
 
 ```{block, type="alert alert-info"}
 #### Question 2
@@ -101,7 +99,12 @@ but it should have an output).
 Ensure that you can render/knit the document after you add that chunk.
 ```
 
-YOUR ANSWER GOES HERE
+```{r Question2-code-chunk}
+x <- 5
+y <- 78
+
+print(x+y)
+```
 
 ```{block, type="alert alert-info"}
 #### Question 3
@@ -114,7 +117,9 @@ Don't forget to knit/render the document
 after you make this change to ensure everything is still working.
 ```
 
-YOUR ANSWER GOES HERE
+```{r Question-3-code-chunk}
+print("This is the Question 3 code chunk, named as \'Question-3-code-chunk\'")
+```
 
 ```{block, type="alert alert-info"}
 #### Question 4
@@ -124,7 +129,11 @@ Create a new code chunk that uses a code chunk option.
 Write out in your own words what the code chunk option is doing.
 ```
 
-YOUR ANSWER GOES HERE
+```{r Question-4-code-chunk, warning=FALSE}
+print("This is the Question 4 code chunk with code chunk option {warning=FALSE}.The code chunk options lets us customize the behavior of the code chunk, here, the 'warning=FALSE' option supresses the warning messsages for the chunk. This code chunk will not print any warning messages because of the code chunk option that is enabled")
+
+warning('This is a warning message that the chunk allows us to print')
+```
 
 
 ####  Multiple code chunk options
@@ -145,7 +154,11 @@ At least one must be different to the ones mentioned above.
 Write in your own words what each code chunk option is doing.
 ```
 
-YOUR ANSWER GOES HERE
+```{r Question-5-code-chunk, include=TRUE, warning=TRUE}
+print("This is the Question 5 code chunk with code chunk options {eval=TRUE, echo=TRUE, warning=TRUE}. The multiple code chunk options defined in this code chunk lets us customize the behavior of the code chunk, here, the 'eval=TRUE' option lets us evaluate the code and include the results as the output. The 'echo=TRUE' option is used to display the code along with its results, 'warning=TRUE' option displays warning messsages for the chunk.")
+
+warning('This is a warning message that the chunk allows us to print because of the option')
+```
 
 
 ### 1.5. YAML Header and document output options
@@ -196,9 +209,16 @@ and edit it so that you include an `author` (yourself) and a `date` (lab due dat
 Include what you added below here as well as a fenced Markdown code block.
 ```
 
-YOUR ANSWER GOES HERE
-
-
+```
+---
+title: "Lab 4 - Introduction to RStudio and R Markdown. Presentations"
+author: "Dhruvi Nishar"
+date: "October 1, 2022"
+output:
+  html_document:
+    toc: true
+---
+```
 
 ### Creating R Markdown documents
 

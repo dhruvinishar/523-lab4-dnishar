@@ -245,7 +245,9 @@ to the GitHub repository for this lab
 and paste the two links below this question.
 ```
 
-YOUR ANSWER GOES HERE
+1 - **HTML output:** https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_dnishar/blob/master/test_markdown.html
+
+2 - **PDF Output:** https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_dnishar/blob/master/test_markdown.pdf
 
 ```{block, type="alert alert-info"}
 #### Question 8

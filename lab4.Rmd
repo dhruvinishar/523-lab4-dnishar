@@ -198,16 +198,15 @@ and edit it so that you include an `author` (yourself) and a `date` (lab due dat
 Include what you added below here as well as a fenced Markdown code block.
 ```
 
-```
-    ---
-    title: "Lab 4 - Introduction to RStudio and R Markdown. Presentations"
-    author: "Dhruvi Nishar"
-    date: "October 1, 2022"
-    output:
-      html_document:
-        toc: true
-    ---
-```
+        ---
+        title: "Lab 4 - Introduction to RStudio and R Markdown. Presentations"
+        author: "Dhruvi Nishar"
+        date: "October 1, 2022"
+        output:
+          html_document:
+            toc: true
+        ---
+
 ### Creating R Markdown documents
 
 You can use the "File" menu inside RStudio to create new R Markdown
@@ -245,9 +244,13 @@ to the GitHub repository for this lab
 and paste the two links below this question.
 ```
 
-1 - **HTML output:** https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_dnishar/blob/master/test_markdown.html
+1 - **HTML output:**
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_dnishar/blob/master/test_markdown.html>
 
-2 - **PDF Output:** https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_dnishar/blob/master/test_markdown.pdf
+2 - **PDF Output:**
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_dnishar/blob/master/test_markdown.pdf>
+
+As we see, there is a notable difference between the two output files.
 
 ```{block, type="alert alert-info"}
 #### Question 8
@@ -266,7 +269,17 @@ rubric={mechanics:6}
    Paste a link to these files as your answer below.
 ```
 
-YOUR ANSWER GOES HERE
+The files that were created can be found here:
+
+1.  **The markdown file:**
+    <https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_dnishar/blob/master/test_markdown_updated.Rmd>
+
+2.  **The HTML rendered output:**
+    <https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_dnishar/blob/master/test_markdown_updated.html>
+
+**Also pasting the link to the `.pdf` generated as output for
+reference:**
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_dnishar/blob/master/test_markdown_updated.pdf>
 
 ```{block, type="alert alert-info"}
 #### Question 9 (Optional)

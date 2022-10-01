@@ -293,7 +293,10 @@ rubric={mechanics:1,reasoning:1}
    What do you see? How is it rendered?
 ```
 
-YOUR ANSWER GOES HERE
+The link to the `github_document` is here: https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_dnishar/blob/master/test_markdown_updated.md
+
+This document is rendered much differently on github compared to any other document output format. The `html_document` output format produces an HTML script file that is then executed by to give a HTML output. It looks like it is rendered as the knitted output of the file. It is rendered best for github and shows us exactly how the visual will look like istead of the raw code.
+
 
 ```{block, type="alert alert-info"}
 #### Question 10

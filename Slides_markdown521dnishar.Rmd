@@ -1,0 +1,62 @@
+---
+title: "Slides_521_dnishar"
+author: "Dhruvi Nishar - dnishar"
+date: "2022-10-01"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Here's Something about me
+
+![](imgs/laptop%20wave.png){width="320"}
+
+I have decided to hop on the 'Bitmoji' trend that MDS seems to follow XD
+
+## Slides with R code
+
+```{r cars, echo = FALSE, warning=FALSE}
+library(palmerpenguins)
+library(ggplot2)
+library(ggthemes)
+
+economist_scatter <- function(data, x, y, colour_by) {
+    ggplot(data, aes(x = {{ x }}, y = {{ y }})) +
+    geom_point(alpha = 0.5, size = 2, aes(color = {{ colour_by }})) +
+    ggtitle("This is a sample plot from the penguins data") +
+    theme_economist()
+}
+economist_scatter(penguins, body_mass_g, flipper_length_mm, sex)
+
+```
+
+## Another Text Slide
+
+Let's talk more about the penguins data from the `palmerpenguins` library.
+
+The goal of palmerpenguins is to provide a great dataset for data exploration & visualization, as an alternative to `iris`. Data were collected and made available by [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php) and the [Palmer Station, Antarctica LTER](https://pallter.marine.rutgers.edu/), a member of the [Long Term Ecological Research Network](https://lternet.edu/). The palmerpenguins package contains two datasets.
+
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png){width="340"}
+
+You can find more information [here](https://allisonhorst.github.io/palmerpenguins/).
+
+## Exploring the data
+
+```{r Exploration, echo=TRUE}
+print("The columns in this data are:")
+print(names(penguins))
+```
+
+## More visualization
+```{r Graph, fig.height=5, fig.width=7, message=FALSE, warning=FALSE}
+library(tidyverse)
+penguins %>%
+  count(species) %>%
+  ggplot() + geom_col(aes(x = species, y = n, fill = species)) +
+  geom_label(aes(x = species, y = n, label = n)) +
+  scale_fill_manual(values = c("darkorange","purple","cyan4")) +
+  theme_minimal() +
+  labs(title = 'Penguins Species & Count')
+```
